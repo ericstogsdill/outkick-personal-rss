@@ -1,0 +1,9 @@
+{
+  "name": "outkick-personal-rss",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A personal RSS feed for the Fox News OutKick page.",
+  "scripts": {
+    "generate": "node scripts/generate-rss.mjs"
+  }
+}
