@@ -14,7 +14,7 @@ const escapeXml = (value) => String(value)
 const normalizeUrl = (href) => {
   try {
     const url = new URL(href, SOURCE_URL);
-    if (url.hostname !== 'www.foxnews.com' || !url.pathname.startsWith('/outkick/')) return null;
+    if (url.hostname !== 'www.foxnews.com' || !url.pathname.startsWith('/outkick-')) return null;
     url.search = '';
     url.hash = '';
     return url.toString();
